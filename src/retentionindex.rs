@@ -4,12 +4,11 @@ use std::io::Write;
 use std::io::{BufRead, BufReader};
 
 /*
-Author Gaurav Sablok,
-Email: codeprog@icloud.com
+Gaurav Sablok,
+codeprog@icloud.com
 */
 
-#[tokio::main]
-pub async fn retentionindexcal(pathfile: &str) -> Result<String, Box<dyn Error>> {
+pub fn retentionindexcal(pathfile: &str) -> Result<String, Box<dyn Error>> {
     let filevector = File::open(pathfile).expect("file not present");
     let fileread = BufReader::new(filevector);
     let mut elutes: Vec<f64> = Vec::new();

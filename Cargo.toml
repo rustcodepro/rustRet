@@ -1,16 +1,16 @@
 [package]
 name = "rustRet"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2024"
 license = "MIT"
 authors = ["Gaurav Sablok <codeprog@icloud.com>"]
 description = "mass-spectroscopy analyzer"
-homepage = "https://github.com/omicscode/rustRet"
-repository = "https://github.com/omicscode/rustRet"
+homepage = "https://github.com/rustcodepro/rustRet"
+repository = "https://github.com/rustcodepro/rustRet"
 
 [dependencies]
 clap = { version = "4.5.47", features = ["derive"] }
 figlet-rs = "0.1.5"
-linfa = "0.7.1"
-tch = { version = "0.20.0", features = ["download-libtorch"] }
-tokio = { version = "1.47.1", features = ["full"] }
+rand = "0.9.2"
+smartcore = { version = "0.4.7", features = ["datasets", "std_rand"] }
+rayon = "1.11.0"

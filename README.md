@@ -9,18 +9,17 @@ cargo build
 ```
 
 ```
-_     ____    _____   _____
 _ __   _   _   ___  | |_  |  _ \  | ____| |_   _|
-| '__| | | | | / __| | __| | |_) | |  _|     | |
-| |    | |_| | \__ \ | |_  |  _ <  | |___    | |
-|_|     \__,_| |___/  \__| |_| \_\ |_____|   |_|
-
+| '__| | | | | / __| | __| | |_) | |  _|     | |  
+| |    | |_| | \__ \ | |_  |  _ <  | |___    | |  
+|_|     \__,_| |___/  \__| |_| \_\ |_____|   |_|  
+                                                 
 
 rustRET.
-************************************************
-Author Gaurav Sablok,
-Email: codeprog@icloud.com
-************************************************
+         ************************************************
+         Author Gaurav Sablok,
+         Email: codeprog@icloud.com
+        ************************************************
 
 Usage: rustRet <COMMAND>
 
@@ -28,11 +27,13 @@ Commands:
 retention-index        retention index calculation
 time-retention         retention time calculate
 retention-time-adjust  retention time adjusted calculation
+machinelearning        machine learning metabolomics
 help                   Print this message or the help of the given subcommand(s)
 
 Options:
 -h, --help     Print help
 -V, --version  Print version
+
 ```
 ```
 ./target/debug/rustRet retention-index ./testfile/sample.txt
