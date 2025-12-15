@@ -102,7 +102,7 @@ pub fn vectorcast(vecstring: Vec<String>) -> Result<Vec<Vec<Vec<f32>>>, Box<dyn 
         .unwrap();
     for i in vecconvert_a.iter() {
         let veclength = i.len();
-        let lengthdifference = veclength as f32 / maxlength as f32;
+        let lengthdifference = veclength as f32 - maxlength as f32;
         if lengthdifference == 0f32 {
             continue;
         } else if lengthdifference != 0f32 {
